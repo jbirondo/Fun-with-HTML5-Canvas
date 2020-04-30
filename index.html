@@ -28,12 +28,12 @@ function draw(e){
   ctx.lineTo(e.offsetX, e.offsetY);
   ctx.stroke();
   console.log(lastX, lastY, e.offsetX, e.offsetY);
-  [lastX, lastY] = [e.offsetX, e.offsetY]
+  [lastX, lastY] = [e.offsetX, e.offsetY];
 }
 
 canvas.addEventListener('mousedown', (e) => {
-  isDrawing = true
-  [lastX, lastY] = [e.offsetX, e.offsetY]
+  isDrawing = true;
+  [lastX, lastY] = [e.offsetX, e.offsetY];
 })
 
 canvas.addEventListener('mousemove', draw)
